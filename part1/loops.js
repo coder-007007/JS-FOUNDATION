@@ -35,14 +35,66 @@
 
 // console.log(total);
 
-let cities = ["Paris", "New York", "London"];
-let cityList = [];
-// for (city of cities) {
-//   cityList.push(city);
-// }
-// console.log(cityList);
+//
 
-for (let c = 0; c < cities.length; c++) {
-  cityList.push(cities[c]);
+/*10 Challenges on loops*/
+
+// let arr = ["green tea ", "iced tea", "Oolong tea", "chai"];
+// let selectedTeas = [];
+// for (let i = 0; i < arr.length; i++) {
+//   if (arr[i] === "chai") {
+//     break;
+//   }
+//   selectedTeas.push(arr[i]);
+// }
+// console.log(selectedTeas);
+
+// let cities = ["London", "New York", "Paris", "Berlin"];
+// let city = [];
+// for (i = 0; i < cities.length; i++) {
+//   if (cities[i] === "paris" || cities[i] === "Paris") {
+//     continue;
+//   }
+//   city.push(cities[i]);
+// }
+// console.log(city);
+
+// let numbers = [1, 2, 3, 4, 5];
+// let smallNumbers = [];
+
+// for (num of numbers) {
+//   smallNumbers.push(num);
+//   if (num === 4) {
+//     break;
+//   }
+// }
+// console.log(smallNumbers);
+
+// let numbers = [2, 3, 6, 7, 8];
+// let doubleNumbers = [];
+
+// numbers.forEach((num) => {
+//   if (num === 7) {
+//     return;
+//   }
+//   doubleNumbers.push(num * 2);
+// });
+// console.log(doubleNumbers);
+//
+
+let teaCollection = [
+  "chai",
+  "black tea",
+  "green tea",
+  "herbal tea",
+  "jasmine tea",
+];
+let shortTeas = [];
+
+for (const tea of teaCollection) {
+  if (tea.length > 10) {
+    break;
+  }
+  shortTeas.push(tea);
 }
-console.log(cityList);
+console.log(shortTeas);
